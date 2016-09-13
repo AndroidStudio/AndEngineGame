@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texture version="1" file="tree.png" type="bitmap" width="3155" height="1436" pixelformat="RGBA_4444" minfilter="linear" magfilter="linear" wrapt="clamp" wraps="clamp" premultiplyalpha="false">
+    <!-- Created with TexturePacker http://texturepacker.com -->
+    <!-- $TexturePacker:SmartUpdate:c36bb951ed92758059241713979fc0ff$ -->
+    <textureregion id="0" src="tree.png" x="0" y="0" width="3155" height="1436" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="3155" srcheight="1436"/>
+</texture>

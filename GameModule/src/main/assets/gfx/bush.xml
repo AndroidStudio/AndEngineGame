@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texture version="1" file="bush.png" type="bitmap" width="530" height="96" pixelformat="RGBA_4444" minfilter="linear" magfilter="linear" wrapt="clamp" wraps="clamp" premultiplyalpha="false">
+    <!-- Created with TexturePacker http://texturepacker.com -->
+    <!-- $TexturePacker:SmartUpdate:a9c73a2c2b90838eb9893dbe605387b2$ -->
+    <textureregion id="0" src="bush.png" x="0" y="0" width="530" height="96" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="530" srcheight="96"/>
+</texture>

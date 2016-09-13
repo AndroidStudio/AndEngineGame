@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texture version="1" file="sprite.png" type="bitmap" width="512" height="512" pixelformat="RGBA_8888" minfilter="linear" magfilter="linear" wrapt="clamp" wraps="clamp" premultiplyalpha="false">
+    <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker -->
+    <!-- $TexturePacker:SmartUpdate:a58c8e12006af92b04b384f431dc13b1:1/1$ -->
+    <textureregion id="0" src="pobrane.jpg" x="307" y="2" width="284" height="177" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="284" srcheight="177"/>
+    <textureregion id="1" src="test.jpg" x="2" y="2" width="303" height="166" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="303" srcheight="166"/>
+</texture>

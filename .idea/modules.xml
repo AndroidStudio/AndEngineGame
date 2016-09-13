@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndEngineAnchorCenter/AndEngineAnchorCenter.iml" filepath="$PROJECT_DIR$/AndEngineAnchorCenter/AndEngineAnchorCenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndEngineGame.iml" filepath="$PROJECT_DIR$/AndEngineGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndEngineTexturePacker/AndEngineTexturePacker.iml" filepath="$PROJECT_DIR$/AndEngineTexturePacker/AndEngineTexturePacker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GameModule/GameModule.iml" filepath="$PROJECT_DIR$/GameModule/GameModule.iml" />
+    </modules>
+  </component>
+</project>
