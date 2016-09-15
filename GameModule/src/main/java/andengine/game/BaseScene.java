@@ -6,14 +6,19 @@ import org.andengine.opengl.vbo.VertexBufferObjectManager;
 
 public abstract class BaseScene extends Scene {
 
-    protected SceneManager mSceneManager = SceneManager.getInstance();
-    protected ResourcesManager mResourcesManager = ResourcesManager.getInstance();
+    protected final SceneManager mSceneManager = SceneManager.getInstance();
+    protected final ResourcesManager mResourcesManager = ResourcesManager.getInstance();
 
-    protected VertexBufferObjectManager mVertexBufferObjectManager = mSceneManager.mEngine.getVertexBufferObjectManager();
-    protected Engine mEngine = mSceneManager.mEngine;
+    protected final VertexBufferObjectManager mVertexBufferObjectManager;
+    protected final Engine mEngine;
+    protected final GameActivity mContext;
 
     public BaseScene() {
-        onCreateScene();
+        this.mEngine = mSceneManager.mEngine;
+        this.mVertexBufferObjectManager = mEngine.getVertexBufferObjectManager();
+        this.mContext = mResourcesManager.mContext;
+
+        this.onCreateScene();
     }
 
     abstract void onCreateScene();

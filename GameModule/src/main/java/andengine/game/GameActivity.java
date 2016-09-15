@@ -1,6 +1,7 @@
 package andengine.game;
 
 import android.util.DisplayMetrics;
+import android.util.Log;
 
 import org.andengine.engine.Engine;
 import org.andengine.engine.LimitedFPSEngine;
@@ -9,13 +10,17 @@ import org.andengine.engine.handler.timer.ITimerCallback;
 import org.andengine.engine.handler.timer.TimerHandler;
 import org.andengine.engine.options.EngineOptions;
 import org.andengine.engine.options.ScreenOrientation;
+import org.andengine.engine.options.WakeLockOptions;
 import org.andengine.engine.options.resolutionpolicy.RatioResolutionPolicy;
 import org.andengine.entity.scene.Scene;
+import org.andengine.extension.tmx.TMXLayer;
 import org.andengine.ui.activity.BaseGameActivity;
 
 import java.io.IOException;
 
 public class GameActivity extends BaseGameActivity {
+    private static final String TAG = "GameActivity";
+
     private ResourcesManager mResourceManager;
     private SceneManager mSceneManager;
 
@@ -42,7 +47,9 @@ public class GameActivity extends BaseGameActivity {
 
     @Override
     public void onCreateScene(OnCreateSceneCallback pOnCreateSceneCallback) throws IOException {
-        pOnCreateSceneCallback.onCreateSceneFinished(this.mSceneManager.onCreateSplashScene());
+        Scene splashScene = this.mSceneManager.onCreateSplashScene();
+  ; //   tmxLayer.attachChild(this);
+        pOnCreateSceneCallback.onCreateSceneFinished(splashScene);
     }
 
     @Override
@@ -51,8 +58,7 @@ public class GameActivity extends BaseGameActivity {
         this.mEngine.registerUpdateHandler(this.mStartMainSceneTimer);
     }
 
-    private final TimerHandler mStartMainSceneTimer = new TimerHandler(2, new ITimerCallback() {
-
+    private final TimerHandler mStartMainSceneTimer = new TimerHandler(1, new ITimerCallback() {
         @Override
         public void onTimePassed(TimerHandler pTimerHandler) {
             mSceneManager.onCreateMainScene();
@@ -70,11 +76,14 @@ public class GameActivity extends BaseGameActivity {
         this.mCameraWidth = 800;
         this.mCameraHeight = (int) (800 / device_ratio);
 
+        Log.e(TAG, "mCameraHeight: " + mCameraHeight);
+
         final BoundCamera boundCamera = new BoundCamera(0, 0, this.mCameraWidth, this.mCameraHeight);
         boundCamera.setBoundsEnabled(true);
 
         final RatioResolutionPolicy ratioResolutionPolicy = new RatioResolutionPolicy(this.mCameraWidth, this.mCameraHeight);
         final EngineOptions engineOptions = new EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, ratioResolutionPolicy, boundCamera);
+        engineOptions.setWakeLockOptions(WakeLockOptions.SCREEN_ON);
         engineOptions.getRenderOptions().setDithering(true);
         engineOptions.getTouchOptions().setNeedsMultiTouch(false);
         engineOptions.getAudioOptions().setNeedsSound(true);

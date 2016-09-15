@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndEngineAnchorCenter/AndEngineAnchorCenter.iml" filepath="$PROJECT_DIR$/AndEngineAnchorCenter/AndEngineAnchorCenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndEngineGame.iml" filepath="$PROJECT_DIR$/AndEngineGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndEngineTMX/AndEngineTMX.iml" filepath="$PROJECT_DIR$/AndEngineTMX/AndEngineTMX.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndEngineTexturePacker/AndEngineTexturePacker.iml" filepath="$PROJECT_DIR$/AndEngineTexturePacker/AndEngineTexturePacker.iml" />
       <module fileurl="file://$PROJECT_DIR$/GameModule/GameModule.iml" filepath="$PROJECT_DIR$/GameModule/GameModule.iml" />
     </modules>

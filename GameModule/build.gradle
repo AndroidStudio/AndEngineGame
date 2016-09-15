@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.0"
 
     defaultConfig {
-        applicationId "andengine.game"
+        applicationId "andengine.game.dev"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -23,4 +23,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':AndEngineAnchorCenter')
     compile project(':AndEngineTexturePacker')
+    compile project(':AndEngineTMX')
 }

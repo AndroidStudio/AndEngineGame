@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified"><source path="D:\AndEngineGame\AndEngineTMX\build\intermediates\exploded-aar\AndEngineGame\AndEngineAnchorCenter\unspecified\assets"/></dataSet><dataSet config="debug"><source path="D:\AndEngineGame\AndEngineTMX\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="D:\AndEngineGame\AndEngineTMX\src\androidTest\assets"/><source path="D:\AndEngineGame\AndEngineTMX\build\generated\assets\shaders\androidTest\debug"/></dataSet></merger>

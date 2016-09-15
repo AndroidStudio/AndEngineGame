@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AndEngineAnchorCenter" />
+            <option value="$PROJECT_DIR$/AndEngineTMX" />
             <option value="$PROJECT_DIR$/AndEngineTexturePacker" />
             <option value="$PROJECT_DIR$/GameModule" />
           </set>
@@ -18,6 +19,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AndEngineAnchorCenter" />
+            <option value="$PROJECT_DIR$/AndEngineTMX" />
             <option value="$PROJECT_DIR$/AndEngineTexturePacker" />
             <option value="$PROJECT_DIR$/GameModule" />
           </set>

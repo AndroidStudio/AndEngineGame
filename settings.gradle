@@ -1,1 +1,1 @@
-include ':GameModule' , ':AndEngineAnchorCenter', ':AndEngineTexturePacker'
+include ':GameModule' , ':AndEngineAnchorCenter', ':AndEngineTexturePacker' , ':AndEngineTMX'
